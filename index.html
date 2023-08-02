@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dahyun Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic+Coding&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <h1 class="offscreen">Dahyun's Website</h1>
+
+    <header class="header">
+
+        <a href="/" class="header-logo">
+            <img src="img/logo.svg" width="" height="">
+        </a>
+
+        <a href="contact.html" class="header-talk">
+            Let's Talk
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="1.2rem">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+            </svg>
+        </a>
+
+        <nav class="header-nav">
+            <h1 class="offscreen">Navigation</h1>
+            <ul class="header-nav-list">
+                <li><a href="/" aria-page="page" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-col">
+                <picture class="hero-image">
+                    <source srcset="img/hero-sm.jpg" width="363" height="222" media="(max-width: 400px)" type="image/jpg">
+                    <source srcset="img/hero-md.jpg" width="608" height="372" media="(max-width: 768px)" type="image/jpg">
+                    <img src="img/hero-lg.jpg" width="870" height="532" alt="me working on a computer">
+                </picture>
+            </div>
+            <div class="hero-col">
+                About
+            </div>
+        </div>
+    </section>
+
+
+
+
 </body>
 </html>
