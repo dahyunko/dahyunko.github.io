@@ -22,7 +22,11 @@
 
 ul {
 	padding: 0;
-	list-style-type: none;
+	margin: 0;
+	list-style: none;
+}
+li{
+	list-style: none;
 }
 
 .fa-square{
@@ -92,7 +96,7 @@ body {
 	margin-top: 1rem;
 }
 .bio .profession {
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	text-align: center;
 	color: var(--color-gray-light-1);
 	margin: 0;
@@ -382,6 +386,118 @@ body {
 	margin-right: 15px;
 }
 
+.style-flex{
+	display: flex;
+}
+
+.style-flex:nth-child(1){flex-grow: 1;}
+.style-flex:nth-child(2){flex-grow: 1;} 
+
+/***수정 부분***/
+/**/
+.pg-skill .detail-content .detail-content-mid{
+	margin-bottom: -1rem;
+	width: 50%;
+}
+
+.pg-skill .detail-content .detail-content-mid .mid-name{
+	color: var(--color-gray-dark-1);
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+.pg-skill .detail-content .detail-content-mid .low-name{
+	background-color: var(--color-light-label);
+	margin-right: 20px;
+}
+
+.pg-skill .detail-content .detail-content-mid span{
+	color: var(--color-gray-dark-1);
+	font-weight: 600;
+	font-size: 1rem;
+}
+
+.pg-skill .detail-content .detail-content-mid h1{
+	font-weight: 600;
+	font-size: 1.1rem;
+    margin: 5px 0;
+    transition: all 0.3s;
+	color:var(--color-black-dark-1)
+}
+
+.pg-skill .detail-content .detail-content-mid:hover h1{
+	color: var(--color-tiffany);
+}
+
+.detail-content-midname{
+	font-weight: 600;
+	margin-top: 5px;
+}
+
+.detail-content-date{
+	padding-right: 15px;
+}
+
+.detail-content-ul{
+	padding: 0 15px;
+}
+
+.style-bold{
+	font-weight: 600;
+}
+
+.non-bold{
+	font-weight: 500;
+}
+
+.underline-link{
+	color:var(--color-black-dark-2);
+	text-decoration-line: underline;
+	text-decoration-thickness: 4px;
+	text-decoration-color: rgba(119, 51, 255, 0.18);
+}
+
+.underline-link:hover{
+	color: rgba(119, 51, 255, 0.7);
+}
+
+.stack-btn{
+	margin: 3px 0;
+	display: flex;
+	flex-wrap : wrap;
+}
+
+.stack-btn li{
+	font-weight: 600;
+	font-size: 0.9rem;
+	margin: 0 0 5px 10px;
+	padding: 4px 7px;
+	border-radius: 5px;
+	color:var(--color-gray-dark-1)	;
+	background-color: var(--color-light-label);
+}
+
+ul > li{
+	padding-bottom: 0.2rem;
+}
+
+.margin-cut li{
+	margin-top: 0rem;
+}
+
+.hilight{
+	/* font-weight: 600; */
+	font-style: italic;
+}
+
+.underline{
+	text-decoration-line: underline;
+}
+
+.make_interval li{
+	margin-top: 3px;
+}
+
 @keyframes circle {
 	0% {
 		box-shadow: 0 0 0 0px rgba(51, 52, 57, 1);
@@ -450,93 +566,12 @@ body {
 	.info-section-display{
 		display: block;
 	}
-} 
 
-/***수정 부분***/
-/**/
-.pg-skill .detail-content .detail-content-mid{
-	margin-bottom: 1.2rem;
-}
+	.style-flex{
+		display: block;
+	}
 
-.pg-skill .detail-content .detail-content-mid .mid-name{
-	color: var(--color-gray-dark-1);
-	font-weight: 300;
-	font-size: 1rem;
-}
-
-.pg-skill .detail-content .detail-content-mid .low-name{
-	background-color: var(--color-light-label);
-	margin-right: 20px;
-}
-
-.pg-skill .detail-content .detail-content-mid span{
-	color: var(--color-gray-dark-1);
-	font-weight: 600;
-	font-size: 1rem;
-}
-
-.pg-skill .detail-content .detail-content-mid h1{
-	font-weight: 600;
-	font-size: 1.1rem;
-    margin: 5px 0;
-    transition: all 0.3s;
-	color:var(--color-black-dark-1)
-}
-
-.pg-skill .detail-content .detail-content-mid:hover h1{
-	color: var(--color-tiffany);
-}
-
-.detail-content-midname{
-	font-weight: 600;
-}
-
-.detail-content-date{
-	padding-right: 15px;
-}
-
-.detail-content-ul{
-	padding: 0 15px;
-}
-
-.style-bold{
-	font-weight: 600;
-}
-
-.non-bold{
-	font-weight: 500;
-}
-
-.underline-link{
-	color:var(--color-black-dark-2);
-	text-decoration-line: underline;
-	text-decoration-thickness: 4px;
-	text-decoration-color: rgba(119, 51, 255, 0.18);
-}
-
-.underline-link:hover{
-	color: rgba(119, 51, 255, 0.7);
-}
-
-.stack-btn{
-	margin: 3px 0;
-	display: flex;
-}
-
-.stack-btn li{
-	font-weight: 600;
-	font-size: 0.9rem;
-	margin-right: 10px;
-	padding: 4px 7px;
-	border-radius: 5px;
-	color:var(--color-gray-dark-1)	;
-	background-color: var(--color-light-label);
-}
-
-ul > li{
-	padding-bottom: 0.2rem;
-}
-
-.margin-cut li{
-	margin-top: 0rem;
+	.pg-skill .detail-content .detail-content-mid{
+		width: 100%;
+	}
 }
