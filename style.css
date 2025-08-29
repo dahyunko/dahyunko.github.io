@@ -595,8 +595,15 @@ ul > li {
   }
 }
 
+@media screen and (min-width: 1500px) {
+  .paragraph {
+    width: 13rem;
+  }
+}
+
 .code-style {
   padding: 2px;
   background-color: var(--color-gray-light-2);
   border-radius: 5px;
 }
+
